@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="Ktmp.SharedCode.androidMain" target="1.6" />
+      <module name="Ktmp.SharedCode.androidTest" target="1.6" />
+      <module name="Ktmp.SharedCode.commonMain" target="1.6" />
+      <module name="Ktmp.SharedCode.commonTest" target="1.6" />
+      <module name="SharedCode_androidMain" target="1.6" />
+      <module name="SharedCode_androidTest" target="1.6" />
+      <module name="SharedModule" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
