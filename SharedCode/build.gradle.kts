@@ -7,6 +7,10 @@ plugins {
 }
 
 kotlin {
+
+    //TODO: ask IOSDev if we need ARM64 & X64....maybe it can be simplified using just ios() <--PROBABLY
+    //https://dev.to/kuuurt/maximizing-code-sharing-between-android-and-ios-with-kotlin-multiplatform-54h8
+
     //select iOS target platform depending on the Xcode environment variables
     val iOSTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
         if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
@@ -22,6 +26,7 @@ kotlin {
         }
     }
 
+    //TODO: Probably have to changeit to access Android Framework to android()
     jvm("android")
 
     sourceSets["commonMain"].dependencies {
