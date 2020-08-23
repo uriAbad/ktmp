@@ -8,7 +8,9 @@ plugins {
 
 kotlin {
 
-    //TODO: ask IOSDev if we need ARM64 & X64....maybe it can be simplified using just ios() <--PROBABLY
+    //TODO: ask IOSDev if we need ARM64 & X64....maybe it can be simplified using just ios(),
+    // but maybe packForXcode task has to be modified too due to binaries.framework??
+    // this, part should be heavy analyzed...
     //https://dev.to/kuuurt/maximizing-code-sharing-between-android-and-ios-with-kotlin-multiplatform-54h8
 
     //select iOS target platform depending on the Xcode environment variables
